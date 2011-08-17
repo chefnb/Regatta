@@ -1,0 +1,69 @@
+<html>
+<head>
+<script src="js/processing-1.0.0.min.js"></script>
+
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script-->
+<script src="js/jquery.min.js"></script>
+<!--link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/mint-choc/jquery-ui.css" rel="stylesheet" type="text/css"-->
+<!--script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"--></script>
+<!--script src="js/jquery-ui.min.js"></script-->
+
+	
+<style>
+body{
+background-color:black;
+color:white;
+font-family:"Courier new";
+width: 700;
+margin : 40; 
+//padding : 0px 0px 32px 0px;
+
+
+}
+#contact{font-size:0.875em;}
+
+#curtain{ display:none;}
+
+
+</style>
+
+<!--[if IE]> 
+<b> Hmph! </b>
+This page is not compatible with Internet Explorer. Very sorry. <p>
+Why dontcha switch to one of the more up-to-speed browsers, say Chrome or Firefox.
+<![endif]-->
+
+
+<!--[if ! IE]><![IGNORE[--><![IGNORE[]]>
+	
+
+<script src="js/rightofway.js"></script>
+ 
+
+</head>
+
+<body>
+<div id="curtain">
+<p>
+<h2>Regatta</h2>
+<br>
+When two boats approach on different tacks, the port tack is supposed to give way. On the same tack, the upwind one gives way.
+<p>
+Start the simulation and rotate the blue wind widget to get a feel for this. Red highlights indicate right of way.
+
+
+<!--PROCESSING CANVAS -->
+
+<div style="margin:30px">
+
+<canvas left-margin="30" id="pde" data-processing-sources="pjs/rightofway.pde pjs/Fleet.pde pjs/Boat.pde pjs/WaveCrests.pde pjs/Button.pde pjs/WindSetter.pde"></canvas>  
+</div>
+
+(c) Nick Braun, 2010
+</div>
+
+</body>
+
+</html>
+
+
